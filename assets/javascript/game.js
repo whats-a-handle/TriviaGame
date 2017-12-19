@@ -15,7 +15,7 @@ function createGame(){
 		//next is updating the actual header text to be the question
 	updateQuestionElement:function(question){
 
-		let questionElements = question.generateQuestionElements();
+		const questionElements = question.generateQuestionElements();
 
 		for(let i = 0; i < questionElements.length; i++){
 
