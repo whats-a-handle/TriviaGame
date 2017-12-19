@@ -1,1 +1,17 @@
 
+body{
+
+background-color:#022B3A;
+
+}
+
+.jumbo-container{
+
+	margin-top:70px;
+}
+.jumbotron{
+	background-color: #E1E5F2;
+}
+.page-header{
+	color:white;
+}
