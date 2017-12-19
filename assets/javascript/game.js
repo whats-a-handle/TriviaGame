@@ -70,7 +70,7 @@ $( document ).ready(function(){
 	//testing the ambiguous object
 	console.log(question_one);
 	
-	var game = createGame();
+	const game = createGame();
 	//create buttons based off of the answer list in our question object
 	game.updateQuestionElement(question_one);
 
