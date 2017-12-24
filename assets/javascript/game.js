@@ -134,6 +134,8 @@ function createGame(){
 		Game.addQuestion(createQuestion("What happened on December 23rd, 1979?", "Soviet tanks went into Afghanistan", 
 												["Swedish troops occupy Norway","The Beatles released their first album",
 												"Soviet tanks went into Afghanistan","The first computer was created"]));
+		Game.addQuestion(createQuestion("In which decade was the first electric guitar made?", "1930s",["1920s","1930s","1940s","1950s"]));
+		Game.addQuestion(createQuestion("What is the primary ingredient in Soy Sauce, besides water?", "Wheat",["Oil","Sesame Powder", "Juiced Peppers","Wheat"]));
 	},
 	countdown:function(){
 		const game = this;
@@ -145,11 +147,6 @@ function createGame(){
 		},1000));
 	
 }
-
-
-
-
-
 
 }
 	
