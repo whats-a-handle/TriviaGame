@@ -42,6 +42,9 @@ function createGame(){
 
 		if(game.previousSelection === undefined){
 				game.skippedAnswers++;
+				game.alertContainer.append("<div class=\"alert alert-danger\">"+
+  			"<strong>SLOWPOKE! The correct answer was " + game.currentAnswer + "</strong></div>");
+				setTimeout(function(){game.alertContainer.empty()},3000);
 			
 			}
 
@@ -160,7 +163,7 @@ function createQuestion(questionText,answer,answerPool){
 		 	clearTimeout(game.timeoutPool[game.timeoutPool.length-1]);
 		 	game.previousSelection = $(this).attr("value");
 		 	game.checkIsCorrect(game.previousSelection,game.currentAnswer);
-		 	setTimeout(function(){game.alertContainer.empty()},2500);
+		 	setTimeout(function(){game.alertContainer.empty()},3000);
 		 	game.nextQuestion();
 
 		 });
